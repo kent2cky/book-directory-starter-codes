@@ -1,0 +1,37 @@
+
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Edit Book</h1>
+            <p>Please fill this form and submit to Edit book.</p>
+            <div>
+                <form action="/edit-book" method="post">
+                    <input type="hidden" name="id" value="<%= book.id %>">
+                    <input placeholder="Book Name" type="text" name="bookName" id="bookName" value="<%= book.name %>">
+                    <input  placeholder="Author" type="text" name="author" id="author" value="<%= book.author %>">
+                    <input  placeholder="Publish Year" type="text" name="publishYear" id="publishYear" value="<%= book.publish_year %>">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <a href="/" class="btn btn-secondary">Go Back</a>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

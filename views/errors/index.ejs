@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <!-- <header>
+        <%# include('../partials/header'); %>
+    </header> -->
+
+    <main>
+        <div class="jumbotron">
+
+
+            <h1 class="text-danger">Error!</h1>
+            <p class="text-danger"><%= typeof errMsg !== 'undefined' ? errMsg : 'Sorry something went wrong!' %></p>
+            <p>Please try again.</p>
+            <a href="/" class="btn btn-primary">Go To Home Page</a>       
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

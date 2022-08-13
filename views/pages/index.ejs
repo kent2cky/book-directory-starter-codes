@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Book Directory</h1>
+            <p>Welcome to book directory.</p>
+
+            <table>
+                <tr><th class="mr-2">Book Name</th><th class="mr-2">Author</th><th class="mr-2">Publish Year</th><th>Actions</th></tr>
+                <% let num = 0 %>
+                <% books.forEach(function(book) { %>
+                    <tr class="<%= num % 2 == 0 ? 'bg-secondary' : '' %>">
+                        <td><%= book.name %></td>
+                        <td><%= book.author %></td>
+                        <td><%= book.publish_year %></td>
+                        <td>
+                            <a href="/edit-book?id=<%= book.id %>" class="btn btn-info">Edit</a> 
+                            <form style="display: inline;" action="/delete-book" method="POST"> 
+                                <input type="hidden" name="id" value="<%= book.id %>"> 
+                                <button class="btn btn-danger" type="submit">Delete</button>
+                            </form> 
+                        </td>
+                    </tr>
+                    <% num ++ %>                    
+                <% }); %>
+            </table>
+
+            <a href="/new-book" class="btn btn-primary mt-3">New Book</a>
+        </div>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>
