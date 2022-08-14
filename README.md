@@ -152,7 +152,7 @@ Here we install all the dependencies necessary for building our app by running
   console.log('Server is listening on port 8080');
 
 ```
-## Test Api Routes
+## Test SSR Pages
 1. open the terminal in your local machine and navigate to the project folder
 2. run `node serverfile.js`
 3. go to your browser and visit "localhost:8080"
