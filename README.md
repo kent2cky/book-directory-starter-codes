@@ -5,7 +5,7 @@ Found in this repository are the complete steps to create a fully functional
 book directory application. The stacks used here is **expressjs,** **ejs,** and **mysql**.
 
 ## Step 1: Get the starter codes
-Fork this repository and then clone it into your local machine.
+Fork this repository and then clone it into your computer.
 
 ## Install Dependencies
 Here we install all the dependencies necessary for building our app by running 
@@ -153,7 +153,7 @@ Here we install all the dependencies necessary for building our app by running
 
 ```
 ## Test SSR Pages
-1. open the terminal in your local machine and navigate to the project folder
+1. open the terminal in your computer and navigate to the project folder
 2. run `node serverfile.js`
 3. go to your browser and visit "localhost:8080"
 
@@ -273,6 +273,6 @@ Here we install all the dependencies necessary for building our app by running
    
   ```
 ## Test Api Routes
-1. open the terminal in your local machine and navigate to the project folder
+1. open the terminal in your computer and navigate to the project folder
 2. run `node serverfile.js`
 3. from your frontend client (i.e. postman, rested, etc), send request to the endpoint.
